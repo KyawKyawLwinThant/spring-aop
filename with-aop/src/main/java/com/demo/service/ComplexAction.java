@@ -11,6 +11,16 @@ import static com.demo.logger.PerformanceLogger.PerformanceInfo;
 
 @Service
 public class ComplexAction {
+    /*
+    6 - 0.0000000000001 = 6
+    6 - 0 =
+     */
+    /*
+    6 / 3 =
+    1 .6 - 2 = 4
+    2. 4 -2 = 2
+    3. 2 - 2 =0
+     */
 
     private ReportDao reportDao;
     private ReportFormatter reportFormatter;
@@ -20,6 +30,9 @@ public class ComplexAction {
         this.reportDao = reportDao;
         this.reportFormatter = reportFormatter;
         this.reportProvider = reportProvider;
+
+
+
     }
 
     public void takeAction(){
